@@ -1,0 +1,64 @@
+[user]
+  name = José Padilla
+  email = jpadilla@webapplicate.com
+
+[core]
+  excludesfile = ~/.gitignore
+  editor = subl -n -w
+  quotepath = false
+
+[color]
+  interactive = true
+  status = true
+  branch = true
+  diff = true
+  ui = true
+
+[difftool "gitx"]
+  cmd = gitx
+
+[difftool]
+  prompt = false
+
+[diff]
+  tool = gitx
+
+[format]
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+
+[alias]
+  # View the SHA, description, and history graph of the latest 20 commits
+  l = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+
+  # View the current working tree status using the short format
+  s = status -s
+
+  # Diff
+  d = diff --patch-with-stat
+
+  # Pull in remote changes for the current repository and all its submodules
+  p = !git pull --rebase
+
+  # Commit all changes
+  ca = !git add . && git add -u && git commit -m
+
+  # Switch to a branch, creating it if necessary
+  go = checkout -B
+
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  ls = branch
+  a  = add
+  b  = branch
+  dc = diff --cached
+  v  = show
+  ll = log
+  cp = cherry-pick
+  c  = checkout
+  cc = commit
+  ri = rebase -i HEAD~10
+  sh = !git-sh
+  ro = !git fetch origin && git reset --hard origin/master
+  tree = log --graph --decorate --pretty=oneline --abbrev-commit

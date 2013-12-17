@@ -1,0 +1,57 @@
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob
+
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell
+
+# Virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper_lazy.sh
+
+# Node.js file limitations
+ulimit -n 10000
+
+# NVM
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Bash Completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
+
+# Add tab completion for `defaults read|write NSGlobalDomain`
+# You could just use `-g` instead, but I like being explicit
+complete -W "NSGlobalDomain" defaults
+
+# Add tab completion for homebrew
+source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+
+# Add `killall` tab completion for common apps
+complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer" killall
+
+# Add completion to Fabric commands
+_fab()
+{
+    local cur
+    COMPREPLY=()
+    # Variable to hold the current word
+    cur="${COMP_WORDS[COMP_CWORD]}"
+
+    # Build a list of the available tasks using the command 'fab -l'
+    local tags=$(fab -l 2>/dev/null | grep "^    " | awk '{print $1;}')
+
+    # Generate possible matches and store them in the
+    # array variable COMPREPLY
+    COMPREPLY=($(compgen -W "${tags}" $cur))
+}
+
+# Assign the auto-completion function _fab for our command fab.
+complete -F _fab fab

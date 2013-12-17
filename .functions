@@ -1,0 +1,25 @@
+function gi() {
+    curl http://gitignore.io/api/$@;
+}
+
+function geoip() {
+    open http://www.ip-adress.com/ip_tracer/"${1}";
+}
+
+function ember_es6() {
+    echo "---> Cloning es6 branch repo"
+    git clone -b es6 https://github.com/gcollazo/brunch-with-ember-reloaded.git .tmp
+    echo "---> Creating new brunch app"
+    brunch new ./.tmp/ $1
+    rm -rf ./.tmp/
+    echo "---> Done. Have a nice day! :)"
+}
+
+function ember_js() {
+    echo "---> Cloning js branch repo"
+    git clone -b javascript https://github.com/jpadilla/brunch-with-ember-reloaded.git .tmp
+    echo "---> Creating new brunch app"
+    brunch new ./.tmp/ $1
+    rm -rf ./.tmp/
+    echo "---> Done. Have a nice day! :)"
+}

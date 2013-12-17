@@ -1,0 +1,38 @@
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+# PATH additions
+export PATH="/usr/local/bin:$PATH"
+
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Postgres.app
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
+# NPM
+export PATH="$PATH:/usr/local/share/npm/bin"
+
+# Cabal
+export PATH="$PATH:~/.cabal/bin"
+
+# RVM
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Python startup script
+export PYTHONSTARTUP=$HOME/.python-startup.py
+
+# Node.js
+export NODE_PATH=/usr/local/lib/node_modules
+
+# Python virtualenv settings
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Dropbox/Projects/
+
+# grep color
+export GREP_OPTIONS='--color=auto'
+
+# ls color
+export CLICOLOR=1
+export LSCOLORS=dxfxcxdxbxegedabagacad
