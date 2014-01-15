@@ -9,6 +9,7 @@ alias sudo='sudo '
 # Shortcuts
 alias d="cd ~/Dropbox"
 alias p="cd ~/Dropbox/Projects"
+alias bp="cd ~/Dropbox/Blimp/Projects"
 alias g=git
 alias a='cd /Applications'
 alias o='open .'
