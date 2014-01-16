@@ -50,4 +50,8 @@ function parse_git_branch() {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-PS1="\[${txtgrn}\]\u \[${bldblu}\]at \[${txtylw}\]\h \[${bldblu}\]in \[${bldred}\]\w\[${bldblu}\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[${txtpur}\]\$(parse_git_branch)\[${bldblu}\]\n\$ \[${txtrst}\]"
+function last_two_dirs {
+pwd |rev| awk -F / '{print $1,$2}' | rev | sed s_\ _/_
+}
+
+PS1="\[${txtgrn}\]\u \[${bldblu}\]at \[${txtylw}\]\h \[${bldblu}\]in \[${bldred}\]\$(last_two_dirs)\[${bldblu}\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[${txtpur}\]\$(parse_git_branch)\[${bldblu}\]\n\$ \[${txtrst}\]"
