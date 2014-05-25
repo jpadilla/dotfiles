@@ -23,3 +23,15 @@ function ember_js() {
     rm -rf ./.tmp/
     echo "---> Done. Have a nice day! :)"
 }
+
+function mkvirtualenv3.3() {
+    mkvirtualenv $1 --python=/usr/local/opt/python3/bin/python3.3
+}
+
+function mkvirtualenv2.7() {
+    mkvirtualenv $1 --python=/usr/local/opt/python/bin/python2.7
+}
+
+function mkvirtualenvpypy() {
+    mkvirtualenv $1 --python=/usr/local/opt/pypy/bin/pypy
+}

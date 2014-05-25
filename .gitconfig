@@ -62,3 +62,6 @@
   sh = !git-sh
   ro = !git fetch origin && git reset --hard origin/master
   tree = log --graph --decorate --pretty=oneline --abbrev-commit
+
+  # GitHub Pull Request Management
+  pr = "!f() { git fetch -fu origin refs/pull/$1/head:pr/$1; } ; f"

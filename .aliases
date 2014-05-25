@@ -23,6 +23,9 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias dig="dig ANY +noall +answer $1"
 alias whois="whois -h whois-servers.net"
 alias flush='dscacheutil -flushcache'
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias scan="nmap -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
+alias sscan="sudo nmap -sS -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
 
 # Git
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
@@ -32,5 +35,4 @@ alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
 alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
 alias mongodbstart="mongod run --config /usr/local/etc/mongod.conf"
-alias ember='brunch new gh:gcollazo/brunch-with-ember-reloaded $1'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
