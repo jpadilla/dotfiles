@@ -1,5 +1,5 @@
 function gi() {
-    curl http://gitignore.io/api/$@;
+    curl https://www.gitignore.io/api/$@;
 }
 
 function geoip() {
