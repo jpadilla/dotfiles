@@ -1,66 +1,66 @@
 {
-    "predef": [
-        "App",
-        "Ember",
-        "DS"
-    ],
+  "predef": [
+    "App",
+    "Ember",
+    "DS"
+  ],
 
-    "node" : true,
-    "browser" : true,
-    "jquery": true,
+  "node" : true,
+  "browser" : true,
+  "jquery": true,
 
-    // Warnings about the debugger statements in your code.
-    "debug": false,
+  // Warnings about the debugger statements in your code.
+  "debug": false,
 
-    // Globals that are usually used for logging poor-man's debugging
-    "devel": false,
+  // Globals that are usually used for logging poor-man's debugging
+  "devel": false,
 
-    // Prohibits the use of == and != in favor of === and !==
-    "eqeqeq": true,
+  // Prohibits the use of == and != in favor of === and !==
+  "eqeqeq": true,
 
-    // Require capitalized names for constructor functions.
-    "newcap": true,
+  // Require capitalized names for constructor functions.
+  "newcap": true,
 
-    // Prohibits the use of arguments.caller and arguments.callee
-    "noarg": true,
+  // Prohibits the use of arguments.caller and arguments.callee
+  "noarg": true,
 
-    // Prohibits the use of constructor functions for side-effects
-    "nonew": false,
+  // Prohibits the use of constructor functions for side-effects
+  "nonew": false,
 
-    // Prohibits the use of unary increment and decrement operators
-    "plusplus": false,
+  // Prohibits the use of unary increment and decrement operators
+  "plusplus": false,
 
-    // Prohibits the use of explicitly undeclared variables.
-    "undef": true,
+  // Prohibits the use of explicitly undeclared variables.
+  "undef": true,
 
-    // Suppresses warnings about the use of global strict mode
-    "globalstrict": true,
+  // Douglas Crockford's JavaScript coding style
+  "white": false,
 
-    // Douglas Crockford's JavaScript coding style
-    "white": false,
+  // Option suppresses warnings about == null comparisons.
+  "eqnull": true,
 
-    // Option suppresses warnings about == null comparisons.
-    "eqnull": true,
+  // Force all variable names to use either camelCase style or UPPER_CASE
+  // with underscores.
+  "camelcase": true,
 
-    // Force all variable names to use either camelCase style or UPPER_CASE
-    // with underscores.
-    "camelcase": true,
+  // Enforce tab width of 2 spaces.
+  "indent": 2,
 
-    // Enforce tab width of 2 spaces.
-    "indent": 2,
+  // Enforce use of single quotation marks for strings.
+  "quotmark": "single",
 
-    // Enforce use of single quotation marks for strings.
-    "quotmark": "single",
+  // Prohibit use of a variable before it is defined.
+  "latedef": true,
 
-    // Prohibit use of a variable before it is defined.
-    "latedef": true,
+  // Prohibit trailing whitespace.
+  "trailing": true,
 
-    // Prohibit trailing whitespace.
-    "trailing": true,
+  // Warn when variables are defined but never used.
+  "unused": true,
 
-    // Warn when variables are defined but never used.
-    "unused": true,
+  // Enforce line length to 80 characters
+  "maxlen": 80,
 
-    // Enforce line length to 80 characters
-    "maxlen": 80
+  // Allow es6 syntax
+  "esnext": true
 }
