@@ -8,7 +8,7 @@ shopt -s histappend
 shopt -s cdspell
 
 # Virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper_lazy.sh
+[ -s /usr/local/bin/virtualenvwrapper_lazy.sh ] && source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # Node.js file limitations
 ulimit -n 10000
@@ -28,4 +28,4 @@ fi
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
 # Load secret dotfile
-source ~/.secret
+[ -s $HOME/.secret ] && source $HOME/.secret
