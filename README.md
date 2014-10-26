@@ -18,7 +18,7 @@ cd dotfiles
 
 ## My OS X Setup
 
-### App Store
+### Manual Installation
 
 This are apps that can't be installed with or I prefer not to install with Cask.
 
@@ -35,7 +35,7 @@ This are apps that can't be installed with or I prefer not to install with Cask.
 - [Chrome](https://www.google.com/chrome/browser/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/desktop/)
 
-### Sublime Text 3
+#### Sublime Text 3
 
 My preferred packages and setup for ST3.
 
