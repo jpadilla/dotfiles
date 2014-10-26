@@ -24,7 +24,7 @@ function echoB() {
 # Get file list
 function getFilesInDir() {
     ls -lah | awk '{
-        if ($9 != "" && $9 != "." && $9 != ".." && $9 != ".git" && $9 != ".DS_Store" && $9 != ".gitmodules" && $9 != "README.md" && $9 != "bootstrap.sh" && $9 != "LICENSE")
+        if ($9 != "" && $9 != "." && $9 != ".." && $9 != ".git" && $9 != ".DS_Store" && $9 != "README.md" && $9 != "bootstrap.sh" && $9 != "LICENSE" && $9 != "install.sh")
             print $9
         }'
 }
