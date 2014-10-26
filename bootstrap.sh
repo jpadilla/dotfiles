@@ -1,6 +1,8 @@
 #!/bin/bash
 # Source: https://github.com/gcollazo/dotfiles
 
+git pull origin master;
+
 # Colors
 function echoY() {
     prompt="$1"
