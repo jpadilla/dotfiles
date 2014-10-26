@@ -7,10 +7,19 @@ echo "Setting up dotfiles..."
 # Homebrew
 echo "Installing Homebrew and Cask..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+
+# Install cask
 brew install caskroom/cask/brew-cask
  
 # Alternative cask versions
 brew tap caskroom/versions
+
+# Install fonts with cask
+echo "Installing fonts..."
+brew tap caskroom/fonts
+brew cask install font-inconsolata
+brew cask install font-source-code-pro
  
 # Install apps with Cask
 echo "Installing OS X Apps..."
@@ -56,6 +65,7 @@ nvm install 0.10
 nvm alias default stable
  
 # Install Node.js global tools
+echo "Installing global modules with npm..."
 npm install -g npm
 npm install -g bower
 npm install -g ember-cli
@@ -64,6 +74,7 @@ npm install -g gulp
 npm install -g jshint
  
 # Install Python tools
+echo "Installing Python tools"
 mkdir ~/.virtualenvs
 pip install virtualenvwrapper
 pip3 install virtualenvwrapper
