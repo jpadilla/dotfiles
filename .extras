@@ -20,7 +20,7 @@ ulimit -n 10000
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Bash Completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
+if hash brew 2>/dev/null && [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
