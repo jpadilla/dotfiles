@@ -1,0 +1,18 @@
+{
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Base16 Color Schemes",
+		"ColorPicker",
+		"Djaneiro",
+		"Emmet",
+		"GoSublime",
+		"Handlebars",
+		"SideBarEnhancements",
+		"Stylus",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-jshint",
+		"Theme - Spacegray"
+	]
+}
