@@ -62,7 +62,7 @@ source ~/.bash_profile
 # Install latest v0.10.x release of node
 echo "Installing node..."
 nvm install 0.10
-nvm alias default stable
+nvm alias default 0.10
 
 # Install Node.js global tools
 echo "Installing global modules with npm..."
