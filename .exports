@@ -44,3 +44,6 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 
 # Android SDK
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# Docker
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
