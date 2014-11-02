@@ -50,8 +50,8 @@ brew cask install postgres
 echo "Installing development tools..."
 brew install bash-completion
 brew install git
-brew install python
 brew install python3
+brew install python
 brew install go
 
 # Install nvm
@@ -77,7 +77,6 @@ npm install -g jshint
 echo "Installing Python tools"
 mkdir ~/.virtualenvs
 pip install virtualenvwrapper
-pip3 install virtualenvwrapper
 pip3 install flake8
 
 # Setup Sublime Text 3
