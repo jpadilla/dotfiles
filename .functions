@@ -6,8 +6,8 @@ function geoip() {
     open http://www.ip-adress.com/ip_tracer/"${1}";
 }
 
-function mkvirtualenv3.3() {
-    mkvirtualenv $1 --python=/usr/local/opt/python3/bin/python3.3
+function mkvirtualenv3.4() {
+    mkvirtualenv $1 --python=/usr/local/opt/python3/bin/python3.4
 }
 
 function mkvirtualenv2.7() {
