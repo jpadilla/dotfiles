@@ -28,11 +28,11 @@ export NODE_PATH=/usr/local/lib/node_modules
 
 # Python virtualenv settings
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Dropbox/Projects/
+export PROJECT_HOME=$HOME/Projects/
 
 # Go
-export GOPATH=$HOME/Dropbox/Projects/go
-export GOBIN=$HOME/Dropbox/Projects/go/bin
+export GOPATH=$HOME/Projects/go
+export GOBIN=$HOME/Projects/go/bin
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
 # grep color
