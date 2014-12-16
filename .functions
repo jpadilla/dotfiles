@@ -19,5 +19,5 @@ function mkvirtualenvpypy() {
 }
 
 function django-start-project() {
-    django-admin.py startproject --template=https://github.com/jpadilla/django-project-template/archive/master.zip --extension=py,md,env $1
+    django-admin.py startproject --template=https://github.com/jpadilla/django-project-template/archive/master.zip --name=Procfile --extension=py,md,env $1
 }
