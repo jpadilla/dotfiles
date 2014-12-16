@@ -49,3 +49,9 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
 export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+# Wheel
+export PIP_USE_WHEEL="true"
+export PIP_WHEEL_DIR="$HOME/.pip/wheels"
+export PIP_FIND_LINKS="$HOME/.pip/wheels"
+export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
