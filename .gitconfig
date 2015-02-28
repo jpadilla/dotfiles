@@ -42,12 +42,10 @@
   # Commit all changes
   ca = !git add . && git add -u && git commit -m
 
-  # Switch to a branch, creating it if necessary
-  go = checkout -B
-
   st = status
   ci = commit
   co = checkout
+  go = checkout
   br = branch
   ls = branch
   a  = add
