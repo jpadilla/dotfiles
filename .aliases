@@ -17,6 +17,7 @@ alias a='cd /Applications'
 alias o='open .'
 alias ls='ls -lah'
 alias s='subl '
+alias m='mvim'
 
 # Network
 alias dig="dig ANY +noall +answer $1"
