@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Get submodules
+echo "Getting submodules..."
+git submodule update --init --recursive
+
 # Setup dotfiles
 echo "Setting up dotfiles..."
 ./bootstrap.sh --force
@@ -20,6 +24,7 @@ echo "Installing fonts..."
 brew tap caskroom/fonts
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
+brew cask install font-sauce-code-powerline
 
 # Install apps with Cask
 echo "Installing OS X Apps..."
@@ -45,6 +50,7 @@ brew cask install robomongo
 brew cask install macdown
 brew cask install cyberduck
 brew cask install postgres
+brew cask install macvim
 
 # Install development tools with Homebrew
 echo "Installing development tools..."
@@ -53,6 +59,7 @@ brew install git
 brew install python3
 brew install python
 brew install go
+brew install the_silver_searcher
 
 # Install nvm
 echo "Installing nvm..."
