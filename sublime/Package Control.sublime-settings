@@ -1,4 +1,12 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"All Autocomplete",
@@ -10,6 +18,7 @@
 		"GoSublime",
 		"Handlebars",
 		"Package Control",
+		"Pretty JSON",
 		"SideBarEnhancements",
 		"Stylus",
 		"SublimeLinter",
