@@ -1,5 +1,5 @@
 # Global gitignore
-# Created by http://gitignore.io
+# Created by https://www.gitignore.io
 
 # Ignore secret dotfile
 .secret
@@ -8,6 +8,8 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Icon must end with two \r
 Icon
 
 
@@ -17,4 +19,10 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-.vim/.netrwhist
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
