@@ -55,11 +55,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_components'
 
-" vim-airline
-set laststatus=2
-let g:airline_theme='powerlineish'
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#syntastic#enabled=1
 
 " GUI Settings
 if has("gui")
@@ -71,5 +66,9 @@ if has("gui")
   colorscheme base16-ocean
 
   " vim-airline
+  set laststatus=2
+  let g:airline_theme='powerlineish'
+  let g:airline#extensions#branch#enabled=1
+  let g:airline#extensions#syntastic#enabled=1
   let g:airline_powerline_fonts = 1
 endif
