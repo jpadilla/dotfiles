@@ -40,6 +40,12 @@ set colorcolumn=+1
 " Remove trailing whitespace
 autocmd BufWritePre *.* :%s/\s\+$//e
 
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
 " NERDTree
 cd ~/Projects
 map <Leader>n :NERDTreeToggle<CR>
