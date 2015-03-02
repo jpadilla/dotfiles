@@ -24,7 +24,6 @@ set ruler
 set autowrite
 set backspace=2
 set ruler
-set autochdir
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
