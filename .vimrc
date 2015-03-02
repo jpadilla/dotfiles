@@ -1,3 +1,5 @@
+set nocompatible
+
 execute pathogen#infect()
 
 let mapleader=","
@@ -24,6 +26,8 @@ set ruler
 set autowrite
 set backspace=2
 set ruler
+set mouse=a
+set showcmd
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
