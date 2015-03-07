@@ -150,7 +150,7 @@ execute pathogen#infect()
 cd ~/Projects
 map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.swp$', '\.pyc$', '\.git$', '__pycache__$']
+let NERDTreeIgnore=['\.swp$', '\.pyc$', '\.git$', '^__pycache__$', '\.tox$']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -167,7 +167,7 @@ let g:syntastic_warning_symbol = "▲"
 """"""""""""""""""""""""""""""
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_components'
+let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|tmp\|dist\|bower_components\|__pycache__\|tox'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
