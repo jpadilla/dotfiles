@@ -58,7 +58,14 @@ function createSymlinks() {
     done
 }
 
+function updateSubmodules() {
+    # Get submodules
+    echo "Getting submodules..."
+    git submodule update --init --recursive
+}
+
 # Run
+updateSubmodules
 createSymlinks
 
 echo
