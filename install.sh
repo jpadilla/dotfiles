@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Get submodules
-echo "Getting submodules..."
-git submodule update --init --recursive
-
 # Setup dotfiles
 echo "Setting up dotfiles..."
 ./bootstrap.sh --force
