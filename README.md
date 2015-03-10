@@ -32,15 +32,7 @@ This are apps that can't be installed with or I prefer not to install with Cask.
 
 #### Browsers
 
+Installing browsers via Cask don't play nicely with 1Password.
+
 - [Chrome](https://www.google.com/chrome/browser/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/desktop/)
-
-#### Sublime Text 3
-
-My preferred packages and setup for ST3.
-
-- [Package Control](https://sublime.wbond.net/installation)
-- SideBarEnhancements
-- SublimeLinter
-- SublimeLinter-flake8
-- SublimeLinter-jshint
