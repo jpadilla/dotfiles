@@ -29,6 +29,7 @@ This are apps that can't be installed with or I prefer not to install with Cask.
 - [Pages](https://itunes.apple.com/us/app/pages/id409201541?mt=12)
 - [Keynote](https://itunes.apple.com/us/app/keynote/id409183694?mt=12)
 - [Numbers](https://itunes.apple.com/us/app/numbers/id409203825?mt=12)
+- [Authy Bluetooth](https://itunes.apple.com/us/app/authy-bluetooth/id668841348?mt=12)
 
 #### Browsers
 
