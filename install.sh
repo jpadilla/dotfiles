@@ -32,7 +32,6 @@ brew cask install slack
 brew cask install dropbox
 brew cask install evernote
 brew cask install harvest
-brew cask install authy-bluetooth
 brew cask install spotify
 brew cask install transmission
 brew cask install paparazzi
@@ -45,7 +44,7 @@ brew cask install iterm2
 brew cask install heroku-toolbelt
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install gitx-rowanj
+brew cask install rowanj-gitx
 brew cask install robomongo
 brew cask install macdown
 brew cask install cyberduck
@@ -63,7 +62,7 @@ brew install the_silver_searcher
 
 # Install nvm
 echo "Installing nvm..."
-curl https://raw.githubusercontent.com/creationix/nvm/v0.17.2/install.sh | PROFILE=~/.extras bash
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash
 source ~/.bash_profile
 
 # Install latest v0.10.x release of node
