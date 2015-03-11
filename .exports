@@ -54,3 +54,6 @@ export DOCKER_TLS_VERIFY=1
 export PIP_USE_WHEEL="true"
 export PIP_WHEEL_DIR="$HOME/.pip/wheels"
 export PIP_FIND_LINKS="$HOME/.pip/wheels"
+
+# Default editor
+export EDITOR='macvim'
