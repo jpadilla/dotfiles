@@ -56,4 +56,4 @@ export PIP_WHEEL_DIR="$HOME/.pip/wheels"
 export PIP_FIND_LINKS="$HOME/.pip/wheels"
 
 # Default editor
-export EDITOR='macvim'
+export EDITOR='vim'
