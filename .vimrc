@@ -36,8 +36,7 @@ set number
 set numberwidth=5
 
 " 80 char ruler
-set textwidth=80
-set colorcolumn=+1
+set colorcolumn=80
 
 "Always show current position
 set ruler
