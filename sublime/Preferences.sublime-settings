@@ -12,7 +12,8 @@
 		".git",
 		".hg",
 		"__pycache__",
-		".tox"
+		".tox",
+		"tmp/*"
 	],
 	"font_face": "Source Code Pro Light",
 	"font_size": 23,
