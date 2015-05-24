@@ -6,18 +6,6 @@ function geoip() {
     open http://www.ip-adress.com/ip_tracer/"${1}";
 }
 
-function mkvirtualenv3.4() {
-    mkvirtualenv $1 --python=/usr/local/opt/python3/bin/python3.4
-}
-
-function mkvirtualenv2.7() {
-    mkvirtualenv $1 --python=/usr/local/opt/python/bin/python2.7
-}
-
-function mkvirtualenvpypy() {
-    mkvirtualenv $1 --python=/usr/local/opt/pypy/bin/pypy
-}
-
 function django-start-project() {
     django-admin.py startproject --template=https://github.com/jpadilla/django-project-template/archive/master.zip --name=Procfile --extension=py,md,env $1
 }
