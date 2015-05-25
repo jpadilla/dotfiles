@@ -4,12 +4,14 @@
 	],
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"All Autocomplete",
 		"Babel",
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"ColorPicker",
 		"Djaneiro",
+		"DocBlockr",
 		"Emmet",
 		"GoSublime",
 		"Handlebars",
