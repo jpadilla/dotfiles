@@ -76,8 +76,3 @@ pyenv install 3.4.3
 pyenv global 2.7.9
 pip install --upgrade pip
 pip install flake8
-
-# Setup Sublime Text 3
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sf $PWD/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
