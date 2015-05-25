@@ -24,7 +24,6 @@ brew cask install font-source-code-pro
 # Install apps with Cask
 echo "Installing OS X Apps..."
 brew cask install dropbox
-brew cask install harvest
 brew cask install spotify
 brew cask install transmission
 brew cask install paparazzi
@@ -65,8 +64,6 @@ echo "Installing global modules with npm..."
 npm install -g npm
 npm install -g bower
 npm install -g ember-cli
-npm install -g grunt-cli
-npm install -g gulp
 npm install -g jshint
 
 # Install Python
