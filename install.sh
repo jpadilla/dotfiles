@@ -2,7 +2,7 @@
 
 # Setup dotfiles
 echo "Setting up dotfiles..."
-./bootstrap.sh --force
+./symlinks.sh --force
 
 # Homebrew
 echo "Installing Homebrew and Cask..."
