@@ -75,9 +75,6 @@ ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Sup
 echoY "--> [LINK]: Default (OSX).sublime-keymap"
 ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
 
-echoY "--> [LINK]: subl"
-ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
 echo
 echoB "--> [DONE]"
 echo
