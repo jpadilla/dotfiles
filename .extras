@@ -13,7 +13,7 @@ ulimit -n 10000
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[[ -r "$NVM_DIR/bash_completion "]] && . "$NVM_DIR/bash_completion"
+[[ -r "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
