@@ -79,3 +79,7 @@ pip install flake8
 pyenv local 3.4.3
 pip install --upgrade pip
 pip install flake8
+
+# Install Package Control for ST3
+echo "Installing Package Control..."
+curl "https://packagecontrol.io/Package Control.sublime-package" > ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
