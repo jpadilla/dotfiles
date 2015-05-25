@@ -73,5 +73,9 @@ pyenv install 2.7.9
 pyenv install 3.4.3
 pyenv global 2.7.9
 source ~/.bash_profile
+pyenv local 2.7.9
+pip install --upgrade pip
+pip install flake8
+pyenv local 3.4.3
 pip install --upgrade pip
 pip install flake8
