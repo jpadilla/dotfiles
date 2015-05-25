@@ -4,7 +4,7 @@ This is a collection of my dotfiles for Mac OS X. Borrows some things from [math
 
 ## Install
 
-`install.sh` will bootstrap dotfiles and run initial setup after a fresh install. Before running this it's a good idea to install Xcode from the App Store and install any pending system updates. This runs `bootstrap.sh`.
+`install.sh` will bootstrap dotfiles and run initial setup after a fresh install. Before running this it's a good idea to install Xcode from the App Store and install any pending system updates. This also runs `symlinks.sh`.
 
 ```
 git clone git@github.com:jpadilla/dotfiles.git
@@ -12,9 +12,9 @@ cd dotfiles
 ./install.sh
 ```
 
-## Bootstrap
+## Symlinks
 
-`boostrap.sh` will bootstrap dotfiles into your home directory by creating symlinks. Run with `--force` to overwrite if files already exist.
+The `symlinks.sh` command will try to symlink all files to your `$HOME` directory. Run with `--force` to overwrite if files already exist.
 
 ## My OS X Setup
 
@@ -29,7 +29,9 @@ This are apps that can't be installed with or I prefer not to install with Cask.
 - [Pages](https://itunes.apple.com/us/app/pages/id409201541?mt=12)
 - [Keynote](https://itunes.apple.com/us/app/keynote/id409183694?mt=12)
 - [Numbers](https://itunes.apple.com/us/app/numbers/id409203825?mt=12)
-- [Authy Bluetooth](https://itunes.apple.com/us/app/authy-bluetooth/id668841348?mt=12)
+- [Evernote](https://itunes.apple.com/us/app/evernote/id406056744?mt=12)
+- [Slack](https://itunes.apple.com/us/app/slack/id803453959?mt=12)
+- [Lingo](https://itunes.apple.com/us/app/lingo/id624884154?mt=12)
 
 #### Browsers
 
