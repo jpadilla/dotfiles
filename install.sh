@@ -44,6 +44,7 @@ brew cask install mongodb
 
 # Install development tools with Homebrew
 echo "Installing development tools..."
+brew install readline
 brew install bash-completion
 brew install git
 brew install pyenv
@@ -71,5 +72,6 @@ echo "Installing Python..."
 pyenv install 2.7.9
 pyenv install 3.4.3
 pyenv global 2.7.9
+source ~/.bash_profile
 pip install --upgrade pip
 pip install flake8
