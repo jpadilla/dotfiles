@@ -63,6 +63,5 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Other
 alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
-alias mongodbstart="mongod run --config /usr/local/etc/mongod.conf"
-alias npmls='npm list --depth=0 "$@" 2>/dev/null'
+alias npmls='npm list --depth=0 "$@" 2>/dev/nameull'
 alias pycclean='find . -name \*.pyc -delete'
