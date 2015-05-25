@@ -17,7 +17,6 @@ alias a='cd /Applications'
 alias o='open .'
 alias ls='ls -lah'
 alias s='subl '
-alias m='mvim'
 
 # Network
 alias dig="dig ANY +noall +answer $1"
@@ -65,3 +64,4 @@ alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/nameull'
 alias pycclean='find . -name \*.pyc -delete'
+alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
