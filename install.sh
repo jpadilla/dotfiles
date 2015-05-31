@@ -66,6 +66,7 @@ npm install -g npm
 npm install -g bower
 npm install -g ember-cli
 npm install -g jshint
+npm install -g phantomjs
 
 # Install Python
 echo "Installing Python..."
