@@ -78,6 +78,12 @@ ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Suppo
 echoY "--> [LINK]: SublimeLinter.sublime-settings"
 ln -sf $PWD/sublime/SublimeLinter.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeLinter.sublime-settings
 
+echoY "--> [LINK]: Python.sublime-settings"
+ln -sf $PWD/sublime/Python.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Python.sublime-settings
+
+echoY "--> [LINK]: subl"
+ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
 echo
 echoB "--> [DONE]"
 echo

@@ -12,15 +12,19 @@
 		"ColorPicker",
 		"Djaneiro",
 		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
 		"Emmet",
+		"GitSavvy",
 		"Handlebars",
+		"Oceanic Next Color Scheme",
 		"Package Control",
 		"Pretty JSON",
 		"SideBarEnhancements",
 		"Stylus",
 		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-flake8",
-		"SublimeLinter-jshint",
+		"SublimeLinter-json",
 		"Theme - Spacegray"
 	]
 }

@@ -67,6 +67,9 @@ npm install -g bower
 npm install -g ember-cli
 npm install -g jshint
 npm install -g phantomjs
+npm install -g babel-eslint
+npm install -g eslint
+npm install -g eslint-config-nightmare-mode
 
 # Install Python
 echo "Installing Python..."
