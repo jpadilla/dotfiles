@@ -9,3 +9,11 @@ function geoip() {
 function django-start-project() {
     django-admin.py startproject --template=https://github.com/jpadilla/django-project-template/archive/master.zip --name=Procfile --extension=py,md,env $1
 }
+
+function mkvirtualenv() {
+  pyenv virtualenv 2.7.9 "${1}" && pyenv activate "${1}"
+}
+
+function mkvirtualenv3() {
+  pyenv virtualenv 3.4.3 "${1}" && pyenv activate "${1}"
+}
