@@ -542,9 +542,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>60 214 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 296 650 476 0 0 1280 777 </string>
+	<string>0 26 1274 751 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>152 50 1122 476 0 0 1280 777 </string>
+	<string>305 233 1258 476 0 0 1280 777 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1118,7 +1118,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.0</real>
+			<real>0.23861978948116302</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -1306,7 +1306,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>454245014.935785</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>459103480.23383999</real>
+	<real>463668108.31746399</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1369,7 +1369,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-07-20T09:28:31Z</date>
+	<date>2015-09-10T13:31:15Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
