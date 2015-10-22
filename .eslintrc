@@ -1,4 +1,3 @@
-
 {
   "extends": "ember",
   "env": {
@@ -23,11 +22,11 @@
     "no-multiple-empty-lines": 0,
     "no-param-reassign": 0,
     "no-process-env": 0,
+    "no-restricted-syntax": [0, "FunctionExpression"],
     "no-shadow": 0,
     "no-ternary": 0,
     "no-undefined": 0,
     "no-underscore-dangle": 0,
-    "no-unused-vars": 0,
     "no-use-before-define": 0,
     "no-warning-comments": 0,
     "object-curly-spacing": [2, "always"],
