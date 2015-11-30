@@ -1,97 +1,58 @@
 #!/bin/bash
 
 # Colors
-function echoY() {
+function yellow() {
     prompt="$1"
     echo -e -n "\033[32m$prompt"
     echo -e -n '\033[0m'
     echo ''
 }
-function echoR() {
+
+function red() {
     prompt="$1"
     echo -e -n "\033[31m$prompt"
     echo -e -n '\033[0m'
     echo ''
 }
-function echoB() {
+
+function blue() {
     prompt="$1"
     echo -e -n "\033[34m$prompt"
     echo -e -n '\033[0m'
     echo ''
 }
 
-# Get file list
+# Gets a list of files
 function getFilesInDir() {
-    find . ! -path . ! -path ./.git ! -path ./.DS_Store -maxdepth 1 -name '.*' -exec basename {} ';'
+    find $1 ! -path ./.DS_Store -name '*.*' -exec basename {} ';'
 }
 
-# Set vars
-FILES=$(getFilesInDir)
-CURRENTPATH=$(pwd)
-FORCE=false
-
-# Change value of FORCE
-if [ "$1" == "--force" ]; then
-    FORCE=true
-fi
-
-function createSymlinks() {
-    for F in ${FILES[@]}; do
-        # Delete files if --force was used
-        if [ $FORCE == true ]; then
-            echoR "--> [DELETE]: $HOME/${F}"
-            rm $HOME/$F
-        fi
-
-        # Make symlink
-        echoY "--> [LINK]: ${HOME}/${F} -> ${CURRENTPATH}/${F}"
-        ln -s $CURRENTPATH/$F $HOME/$F
-
-        if [ $? -eq 1 ]; then
-            echo
-            echoR "--> [ERROR]: You have already have a file named ${F} in your home folder."
-            echoR "    Please backup of your old files."
-            echoR "    Using \"--force\" will allow you to overwrite your existing files."
-            echo
-            break
-        fi
-    done
+# $1 directory to search for files
+# $2 destination of symlink
+function symlinkFilesTo() {
+  for F in $(getFilesInDir $1); do
+    # Make symlink
+    yellow "- ${2}/${F} -> ${PWD}/${1}/${F}"
+    ln -sf ${PWD}/${1}/${F} ${2}/${F}
+  done
 }
 
-# Run
-echoB "--> dotfiles stuff.."
-createSymlinks
+# Home files
+blue "--> home symlinks.."
+symlinkFilesTo home ${HOME}
 
-# Sublime Text 3
-echoB "--> Sublime Text stuff.."
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+# Atom.io
+blue "--> Atom.io symlinks.."
+symlinkFilesTo atom ${HOME}/.atom
 
-echoY "--> [LINK]: Preferences.sublime-settings"
-ln -sf $PWD/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+# Done
+blue "--> Done!"
 
-echoY "--> [LINK]: Package Control.sublime-settings"
-ln -sf $PWD/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
-
-echoY "--> [LINK]: Default (OSX).sublime-keymap"
-ln -sf $PWD/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
-
-echoY "--> [LINK]: SublimeLinter.sublime-settings"
-ln -sf $PWD/sublime/SublimeLinter.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeLinter.sublime-settings
-
-echoY "--> [LINK]: Python.sublime-settings"
-ln -sf $PWD/sublime/Python.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Python.sublime-settings
-
-echoY "--> [LINK]: subl"
-ln -sf ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
-echo
-echoB "--> [DONE]"
-echo
-
-unset echoY
-unset echoR
-unset echoB
+# Unset and source
+unset yellow
+unset red
+unset blue
 unset getFilesInDir
-unset createSymlinks
+unset symlinkFilesTo
 
 source ~/.bash_profile

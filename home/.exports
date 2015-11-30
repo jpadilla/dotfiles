@@ -31,5 +31,5 @@ export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 # Default editor
-export EDITOR='subl -w'
-export VISUAL='subl -w'
+export EDITOR='atom -nw'
+export VISUAL='atom -nw'

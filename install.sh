@@ -2,7 +2,7 @@
 
 # Setup dotfiles
 echo "Setting up dotfiles..."
-./symlinks.sh --force
+./symlinks.sh
 
 # Homebrew
 echo "Installing Homebrew and Cask..."
@@ -23,6 +23,7 @@ brew cask install font-source-code-pro
 
 # Install apps with Cask
 echo "Installing OS X Apps..."
+brew cask install atom
 brew cask install dropbox
 brew cask install spotify
 brew cask install transmission
@@ -55,10 +56,10 @@ echo "Installing nvm..."
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash
 source ~/.bash_profile
 
-# Install latest io.js release of node
-echo "Installing io.js..."
-nvm install iojs
-nvm alias default iojs
+# Install latest release of node
+echo "Installing node..."
+nvm install v5
+nvm alias default v5
 
 # Install Node.js global tools
 echo "Installing global modules with npm..."
@@ -78,13 +79,11 @@ pyenv install 2.7.9
 pyenv install 3.4.3
 pyenv global 2.7.9
 source ~/.bash_profile
+
 pyenv local 2.7.9
 pip install --upgrade pip
 pip install flake8
+
 pyenv local 3.4.3
 pip install --upgrade pip
 pip install flake8
-
-# Install Package Control for ST3
-echo "Installing Package Control..."
-curl "https://packagecontrol.io/Package Control.sublime-package" > ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package

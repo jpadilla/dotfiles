@@ -4,17 +4,41 @@ This is a collection of my dotfiles for Mac OS X. Borrows some things from [math
 
 ## Install
 
-`install.sh` will bootstrap dotfiles and run initial setup after a fresh install. Before running this it's a good idea to install Xcode from the App Store and install any pending system updates. This also runs `symlinks.sh`.
+### Install OS updates
 
+Make sure your machine has all OS updates installed.
+
+```bash
+sudo softwareupdate --install --all
 ```
+
+### Xcode
+Install the latest [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the AppStore and launch it.
+
+### Clone, install and symlink
+Clone this repo and run the install script. This script will also run `symlinks.sh`.
+
+```bash
 git clone git@github.com:jpadilla/dotfiles.git
 cd dotfiles
 ./install.sh
 ```
 
-## Symlinks
+### Atom Packages
+Launch Atom and **Install Shell Commands**. Once the Atom shell commands are installed you can install packages. All the packages that I use are starred and can be found on my [user profile](https://atom.io/users/jpadilla/stars).
 
-The `symlinks.sh` command will try to symlink all files to your `$HOME` directory. Run with `--force` to overwrite if files already exist.
+To install packages:
+
+```bash
+apm login
+apm stars --install
+```
+
+To update packages:
+
+```bash
+apm star --installed
+```
 
 ## My OS X Setup
 
@@ -31,11 +55,9 @@ This are apps that can't be installed with or I prefer not to install with Cask.
 - [Numbers](https://itunes.apple.com/us/app/numbers/id409203825?mt=12)
 - [Evernote](https://itunes.apple.com/us/app/evernote/id406056744?mt=12)
 - [Slack](https://itunes.apple.com/us/app/slack/id803453959?mt=12)
-- [Lingo](https://itunes.apple.com/us/app/lingo/id624884154?mt=12)
 
 #### Browsers
 
-Installing browsers via Cask don't play nicely with 1Password.
-
 - [Chrome](https://www.google.com/chrome/browser/)
-- [Firefox](https://www.mozilla.org/en-US/firefox/desktop/)
+- [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- [Tor](https://www.torproject.org/download/download-easy.html.en)

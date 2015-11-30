@@ -1,0 +1,41 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-dark-ui"
+      "oceanic-next"
+    ]
+    disabledPackages: [
+      "metrics"
+      "exception-reporting"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "*.pyc"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 21
+    fontFamily: "SourceCodePro-Light"
+    scrollPastEnd: true
+    softWrap: true
+    showIndentGuide: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+    hideIgnoredNames: true
+  linter:
+    showErrorPanel: false
+  "linter-eslint":
+    useGlobalEslint: true
+    globalNodePath: "/Users/jpadilla/.nvm/versions/node/v4.2.1"
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".html.php.text":
+  editor:
+    tabLength: 4
