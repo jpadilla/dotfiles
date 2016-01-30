@@ -33,6 +33,7 @@
   "linter-eslint":
     useGlobalEslint: true
     globalNodePath: "/Users/jpadilla/.nvm/versions/node/v4.2.1"
+    eslintrcPath: "/Users/jpadilla/.eslintrc"
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   "linter-flake8":

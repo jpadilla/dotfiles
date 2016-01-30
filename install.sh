@@ -69,9 +69,10 @@ npm install -g ember-cli
 npm install -g jshint
 npm install -g phantomjs
 npm install -g babel
-npm install -g babel-eslint
 npm install -g eslint
-npm install -g eslint-config-ember
+npm install -g babel-eslint
+npm install -g eslint-plugin-babel
+npm install -g eslint-config-blimp
 
 # Install Python
 echo "Installing Python..."
