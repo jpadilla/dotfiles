@@ -24,11 +24,10 @@
     fontSize: 21
     fontFamily: "SourceCodePro-Light"
     scrollPastEnd: true
-    softWrap: true
     showIndentGuide: true
   "tree-view":
-    hideVcsIgnoredFiles: true
     hideIgnoredNames: true
+    squashDirectoryNames: true
   linter:
     showErrorPanel: false
   "linter-eslint":
@@ -36,6 +35,9 @@
     globalNodePath: "/Users/jpadilla/.nvm/versions/node/v4.2.1"
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+  "linter-flake8":
+    executablePath: "/Users/jpadilla/.pyenv/versions/2.7.9/bin/flake8"
+  "language-babel": {}
 ".html.php.text":
   editor:
     tabLength: 4
