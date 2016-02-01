@@ -1,11 +1,5 @@
 "*":
-  welcome:
-    showOnStartup: false
   core:
-    themes: [
-      "one-dark-ui"
-      "oceanic-next"
-    ]
     disabledPackages: [
       "metrics"
       "exception-reporting"
@@ -19,26 +13,31 @@
       "Thumbs.db"
       "*.pyc"
     ]
+    themes: [
+      "one-dark-ui"
+      "oceanic-next"
+    ]
   editor:
-    invisibles: {}
-    fontSize: 21
     fontFamily: "SourceCodePro-Light"
+    fontSize: 21
+    invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
-  "tree-view":
-    hideIgnoredNames: true
-    squashDirectoryNames: true
+  "language-babel": {}
   linter:
     showErrorPanel: false
   "linter-eslint":
-    useGlobalEslint: true
     globalNodePath: "/Users/jpadilla/.nvm/versions/node/v4.2.1"
-    eslintrcPath: "/Users/jpadilla/.eslintrc"
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
+    useGlobalEslint: true
   "linter-flake8":
     executablePath: "/Users/jpadilla/.pyenv/versions/2.7.9/bin/flake8"
-  "language-babel": {}
+  "tree-view":
+    hideIgnoredNames: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".html.php.text":
   editor:
     tabLength: 4
