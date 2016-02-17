@@ -51,6 +51,11 @@ brew install git
 brew install pyenv
 brew install pyenv-virtualenv
 
+echo "Installing utils..."
+brew install tree
+brew install watchman
+brew install jq
+
 # Install nvm
 echo "Installing nvm..."
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash

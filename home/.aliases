@@ -18,7 +18,8 @@ alias ls='ls -lah'
 alias a='atom '
 
 # Network
-alias dig="dig ANY +noall +answer $1"
+alias dig="dig @8.8.8.8 ANY +noall +answer $1"
+alias digns="dig @8.8.8.8 +short NS $1"
 alias whois="whois -h whois-servers.net"
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias scan="nmap -T4 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every 5s $1"
@@ -56,3 +57,4 @@ alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/nameull'
 alias pycclean='find . -name \*.pyc -delete'
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+alias atomupdate='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
