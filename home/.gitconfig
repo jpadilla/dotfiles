@@ -1,10 +1,14 @@
 [user]
   name = José Padilla
   email = jpadilla@webapplicate.com
+  signingkey = 9B2987B1
 
 [core]
   excludesfile = ~/.gitignore
   quotepath = false
+
+[commit]
+  gpgsign = true
 
 [color]
   interactive = true
@@ -27,7 +31,7 @@
 
 [alias]
   # View the SHA, description, and history graph of the latest 20 commits
-  l = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  l = log --show-signature --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
   # View the current working tree status using the short format
   s = status -s
