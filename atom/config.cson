@@ -12,6 +12,8 @@
       "._*"
       "Thumbs.db"
       "*.pyc"
+      "npm-debug.log"
+      "__pycache__"
     ]
     themes: [
       "one-dark-ui"
