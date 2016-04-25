@@ -31,3 +31,6 @@ eval "$(docker-machine env default)"
 # Default editor
 export EDITOR='vim'
 export VISUAL='vim'
+
+# Homebrew
+export HOMEBREW_NO_ANALYTICS=1
