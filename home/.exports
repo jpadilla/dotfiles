@@ -34,3 +34,6 @@ export VISUAL='vim'
 
 # Homebrew
 export HOMEBREW_NO_ANALYTICS=1
+
+# Android SDK
+export ANDROID_HOME=/usr/local/opt/android-sdk
