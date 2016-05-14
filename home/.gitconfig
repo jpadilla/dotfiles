@@ -6,6 +6,7 @@
 [core]
   excludesfile = ~/.gitignore
   quotepath = false
+	autocrlf = input
 
 [commit]
   gpgsign = true
