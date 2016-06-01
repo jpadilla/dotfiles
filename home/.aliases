@@ -12,6 +12,7 @@ alias d="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias bp="cd ~/Projects/Blimp"
 alias ap="cd ~/Projects/Alias"
+alias dotfiles="cd ~/Projects/Personal/dotfiles"
 alias g=git
 alias o='open .'
 alias ls='ls -lah'
