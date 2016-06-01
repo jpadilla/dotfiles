@@ -9,8 +9,9 @@ alias sudo='sudo '
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias d="cd ~/Desktop"
-alias p="cd ~/Projects/Personal"
+alias p="cd ~/Projects"
 alias bp="cd ~/Projects/Blimp"
+alias ap="cd ~/Projects/Alias"
 alias g=git
 alias o='open .'
 alias ls='ls -lah'
