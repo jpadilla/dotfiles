@@ -33,6 +33,9 @@
     useGlobalEslint: true
   "linter-flake8":
     executablePath: "/Users/jpadilla/.pyenv/versions/2.7.9/bin/flake8"
+  "one-dark-ui":
+    layoutMode: "Spacious"
+    tabSizing: "Even"
   "tree-view":
     hideIgnoredNames: true
     squashDirectoryNames: true
