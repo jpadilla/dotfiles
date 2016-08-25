@@ -51,7 +51,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Other
 alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
-alias npmls='npm list --depth=0 "$@" 2>/dev/nameull'
+alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 alias atomupdate='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'
