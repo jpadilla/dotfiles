@@ -31,3 +31,26 @@ function docker-cleanup() {
 	docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
 	docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
 }
+
+
+function lazynvm() {
+  unset -f nvm node npm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+  [[ -r "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
+}
+
+function nvm() {
+  lazynvm
+  nvm $@
+}
+
+function node() {
+  lazynvm
+  node $@
+}
+
+function npm() {
+  lazynvm
+  npm $@
+}
