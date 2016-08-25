@@ -29,7 +29,7 @@
   linter:
     showErrorPanel: false
   "linter-eslint":
-    globalNodePath: "/Users/jpadilla/.nvm/versions/node/v4.2.1"
+    globalNodePath: "/Users/jpadilla/.nvm/versions/node/v6.3.0"
     useGlobalEslint: true
   "linter-flake8":
     executablePath: "/Users/jpadilla/.pyenv/versions/2.7.9/bin/flake8"
