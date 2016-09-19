@@ -25,12 +25,6 @@ export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
 
-# Docker
-docker-machine ip > /dev/null 2>&1
-if [ $? -eq 0 ]; then
-  eval "$(docker-machine env)"
-fi
-
 # Default editor
 export EDITOR='vim'
 export VISUAL='vim'
