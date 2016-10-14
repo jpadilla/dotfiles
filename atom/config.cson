@@ -15,10 +15,12 @@
       "npm-debug.log"
       "__pycache__"
     ]
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "oceanic-next"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "SourceCodePro-Light"
     fontSize: 21
