@@ -13,7 +13,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 # MongoDB.app
-PATH="~/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
+PATH="/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb:$PATH"
 
 # Python startup script
 export PYTHONSTARTUP=$HOME/.python-startup.py
