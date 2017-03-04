@@ -24,7 +24,7 @@ function mkvirtualenv() {
 }
 
 function mkvirtualenv3() {
-  pyenv virtualenv 3.4.3 "${1}" && pyenv activate "${1}"
+  pyenv virtualenv 3.5.3 "${1}" && pyenv activate "${1}"
 }
 
 function docker-cleanup() {
