@@ -34,7 +34,7 @@ function docker-cleanup() {
 
 
 function lazynvm() {
-  unset -f nvm node npm
+  unset -f nvm node npm yarn
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
   [[ -r "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
@@ -53,4 +53,9 @@ function node() {
 function npm() {
   lazynvm
   npm $@
+}
+
+function yarn() {
+  lazynvm
+  yarn $@
 }
