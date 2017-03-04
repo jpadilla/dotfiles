@@ -69,5 +69,5 @@
   # GitHub Pull Request Management
   pr = "!f() { git fetch -fu origin refs/pull/$1/head:pr/$1; } ; f"
 
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+[credential]
+	helper = osxkeychain
