@@ -545,8 +545,12 @@
 	<string>323 317 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 289 620 392 0 0 1280 777 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 139 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>269 218 1018 447 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 30 1279 747 0 0 1280 777 </string>
+	<string>0 247 730 527 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>321 233 730 527 0 0 1280 777 </string>
 	<key>NeverWarnAboutOverrides</key>
@@ -1136,7 +1140,7 @@
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
@@ -1314,7 +1318,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>E8D1E3AF-006B-4391-820B-FA2106F451F0</string>
 	<key>NoSyncLastTipTime</key>
-	<real>488992135.209544</real>
+	<real>491845349.233836</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -1323,6 +1327,8 @@
 	<real>477966914.67778599</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>486485873.41755599</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -1347,6 +1353,35 @@
 		<string>0018</string>
 		<string>0019</string>
 		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
+		<string>0038</string>
+		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1412,7 +1447,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-29T18:44:48Z</date>
+	<date>2016-10-21T19:41:05Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3874,6 +3909,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.2</string>
+	<string>3.0.10</string>
 </dict>
 </plist>
