@@ -23,7 +23,7 @@
     useCustomTitleBar: true
   editor:
     fontFamily: "SourceCodePro-Light"
-    fontSize: 21
+    fontSize: 23
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -38,9 +38,10 @@
   "one-dark-ui":
     layoutMode: "Spacious"
     tabSizing: "Even"
+  "pinned-tabs":
+    animated: true
   "tree-view":
     hideIgnoredNames: true
-    squashDirectoryNames: true
   welcome:
     showOnStartup: false
   whitespace:
