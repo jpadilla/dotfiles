@@ -24,7 +24,7 @@ function blue() {
 
 # Gets a list of files
 function getFilesInDir() {
-    find $1 ! -path ./.DS_Store -name '*.*' -exec basename {} ';'
+  find $1 ! -path ./.DS_Store -name '*.*' -maxdepth 1 -mindepth 1 -exec basename {} ';'
 }
 
 # $1 directory to search for files
@@ -33,7 +33,7 @@ function symlinkFilesTo() {
   for F in $(getFilesInDir $1); do
     # Make symlink
     yellow "- ${2}/${F} -> ${PWD}/${1}/${F}"
-    ln -sf ${PWD}/${1}/${F} ${2}/${F}
+    ln -sfn ${PWD}/${1}/${F} ${2}/${F}
   done
 }
 
