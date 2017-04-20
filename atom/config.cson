@@ -20,7 +20,7 @@
       "one-dark-ui"
       "oceanic-next"
     ]
-    useCustomTitleBar: true
+    titleBar: "hidden"
   editor:
     fontFamily: "SourceCodePro-Light"
     fontSize: 23
@@ -28,13 +28,13 @@
     scrollPastEnd: true
     showIndentGuide: true
   "language-babel": {}
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-eslint":
     globalNodePath: "/Users/jpadilla/.nvm/versions/node/v6.3.0"
     useGlobalEslint: true
   "linter-flake8":
     executablePath: "/Users/jpadilla/.pyenv/versions/2.7.9/bin/flake8"
+  "linter-ui-default": {}
   "one-dark-ui":
     layoutMode: "Spacious"
     tabSizing: "Even"

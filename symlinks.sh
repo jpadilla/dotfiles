@@ -24,7 +24,7 @@ function blue() {
 
 # Gets a list of files
 function getFilesInDir() {
-  find $1 ! -path ./.DS_Store -name '*.*' -maxdepth 1 -mindepth 1 -exec basename {} ';'
+  find $1 ! -path ./.DS_Store -name '*.*'
 }
 
 # $1 directory to search for files
@@ -32,18 +32,24 @@ function getFilesInDir() {
 function symlinkFilesTo() {
   for F in $(getFilesInDir $1); do
     # Make symlink
-    yellow "- ${2}/${F} -> ${PWD}/${1}/${F}"
-    ln -sfn ${PWD}/${1}/${F} ${2}/${F}
+    cleanPath=$(echo "$F" | sed 's,^[^/]*/,,')
+    yellow "- ${2}/${cleanPath} -> ${1}/${cleanPath}"
+    ln -sfn "${PWD}/${1}/${cleanPath}" "${2}/${cleanPath}"
   done
 }
 
 # Home files
 blue "--> home symlinks.."
-symlinkFilesTo home ${HOME}
+symlinkFilesTo home "${HOME}"
 
 # Atom.io
 blue "--> Atom.io symlinks.."
-symlinkFilesTo atom ${HOME}/.atom
+symlinkFilesTo atom "${HOME}/.atom"
+
+# vscode
+blue "--> VSCode symlinks..."
+mkdir -p "${HOME}/Library/Application Support/Code/User/snippets"
+symlinkFilesTo vscode "${HOME}/Library/Application Support/Code/User"
 
 # Done
 blue "--> Done!"

@@ -1,0 +1,25 @@
+{
+    "editor.fontSize": 22,
+    "editor.fontFamily": "SourceCodePro-Light",
+    "editor.rulers": [80, 100],
+    "editor.tabSize": 2,
+    "editor.tabCompletion": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true
+    },
+    "workbench.colorTheme": "Oceanic Next",
+    "workbench.welcome.enabled": false,
+    "workbench.iconTheme": "file-icons-colourless",
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.shellArgs.osx": ["-l"],
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Path": "/Users/jpadilla/.pyenv/versions/2.7.9/bin/flake8"
+}
