@@ -54,7 +54,7 @@
   br = branch
   ls = branch
   a  = add
-  b  = branch
+  b  = branch --sort=committerdate
   dc = diff --cached
   v  = show
   ll = log
@@ -68,6 +68,8 @@
 
   # GitHub Pull Request Management
   pr = "!f() { git fetch -fu origin refs/pull/$1/head:pr/$1; } ; f"
+
+  delete-merged-branches = !git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin
 
 [credential]
 	helper = osxkeychain
