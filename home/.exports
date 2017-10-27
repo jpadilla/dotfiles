@@ -2,7 +2,7 @@
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-PATH="~/.bin:$PATH"
+PATH="$HOME/.bin:$PATH"
 
 # Adds homebrew install path
 PATH="/usr/local/bin:$PATH"
