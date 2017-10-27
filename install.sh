@@ -23,7 +23,6 @@ brew cask install font-source-code-pro
 
 # Install apps with Cask
 echo "Installing OS X Apps..."
-brew cask install atom
 brew cask install dropbox
 brew cask install spotify
 brew cask install transmission

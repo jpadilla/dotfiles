@@ -42,10 +42,6 @@ function symlinkFilesTo() {
 blue "--> home symlinks.."
 symlinkFilesTo home "${HOME}"
 
-# Atom.io
-blue "--> Atom.io symlinks.."
-symlinkFilesTo atom "${HOME}/.atom"
-
 # vscode
 blue "--> VSCode symlinks..."
 mkdir -p "${HOME}/Library/Application Support/Code/User/snippets"

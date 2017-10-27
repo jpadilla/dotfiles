@@ -16,7 +16,6 @@ alias dotfiles="cd ~/Projects/Personal/dotfiles"
 alias g=git
 alias o='open .'
 alias ls='ls -lah'
-alias a='atom '
 
 # Network
 alias dig="dig @8.8.8.8 ANY +noall +answer $1"
@@ -54,4 +53,3 @@ alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
-alias atomupdate='apm unstar $(apm stars --json | jq -r ".[].name") && apm star --installed'

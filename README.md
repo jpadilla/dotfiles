@@ -24,22 +24,6 @@ cd dotfiles
 ./install.sh
 ```
 
-### Atom Packages
-Launch Atom and **Install Shell Commands**. Once the Atom shell commands are installed you can install packages. All the packages that I use are starred and can be found on my [user profile](https://atom.io/users/jpadilla/stars).
-
-To install packages:
-
-```bash
-apm login
-apm stars --install
-```
-
-To update packages:
-
-```bash
-apm star --installed
-```
-
 ## My OS X Setup
 
 ### Manual Installation
