@@ -28,6 +28,10 @@
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": false,
     "[python]": {
-        "editor.tabSize": 4
-    }
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true
+    },
+    "python.formatting.provider": "yapf",
+    "prettier.singleQuote": true,
+    "workbench.panel.location": "bottom"
 }
