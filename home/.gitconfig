@@ -1,7 +1,7 @@
 [user]
   name = José Padilla
   email = jpadilla@webapplicate.com
-  signingkey = 9B2987B1
+  signingkey = B55434E2
 
 [core]
   excludesfile = ~/.gitignore
@@ -9,24 +9,12 @@
 	autocrlf = input
 	pager = diff-so-fancy | less --tabs=4 -RFX
 
-[commit]
-  gpgsign = true
-
 [color]
   interactive = true
   status = true
   branch = true
   diff = true
   ui = true
-
-[difftool "gitx"]
-  cmd = gitx
-
-[difftool]
-  prompt = false
-
-[diff]
-  tool = gitx
 
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
