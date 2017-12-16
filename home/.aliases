@@ -35,6 +35,7 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 # Git
 alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
+alias gtag='git tag -s $1'
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
@@ -52,4 +53,4 @@ alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
-alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+#alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
