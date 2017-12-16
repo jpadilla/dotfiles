@@ -33,5 +33,6 @@
     },
     "python.formatting.provider": "yapf",
     "prettier.singleQuote": true,
+    "prettier.arrowParens": "always",
     "workbench.panel.location": "bottom"
 }
