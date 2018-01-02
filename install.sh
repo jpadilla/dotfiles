@@ -8,6 +8,9 @@ echo "Installing all of Homebrew..."
 brew tap Homebrew/bundle
 brew bundle
 
+# Accept Xcode license
+sudo xcodebuild -license accept
+
 # Install nvm
 echo "Installing nvm..."
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash
