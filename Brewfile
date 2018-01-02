@@ -1,7 +1,8 @@
-tap 'homebrew/core'
-tap 'homebrew/bundle'
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "caskroom/cask"
+tap "caskroom/fonts"
+tap "heroku/brew"
 
 brew "asciinema"
 brew "awscli"
