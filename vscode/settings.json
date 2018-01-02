@@ -32,7 +32,7 @@
         "editor.formatOnSave": true
     },
     "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": ["--style", "facebook"],
     "prettier.singleQuote": true,
-    "prettier.arrowParens": "always",
-    "workbench.panel.location": "bottom"
+    "prettier.arrowParens": "always"
 }
