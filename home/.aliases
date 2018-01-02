@@ -53,4 +53,4 @@ alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
-#alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+alias vscode-extensions-update='code --list-extensions > ~/Projects/Personal/dotfiles/vscode/extensions.txt && cat ~/Projects/Personal/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
