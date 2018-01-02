@@ -1,6 +1,8 @@
 PeterJausovec.vscode-docker
+Tyriar.sort-lines
 dracula-theme.theme-dracula
 esbenp.prettier-vscode
 file-icons.file-icons
+mrmlnc.vscode-duplicate
 ms-python.python
 timonwong.shellcheck
