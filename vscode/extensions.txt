@@ -1,0 +1,6 @@
+PeterJausovec.vscode-docker
+dracula-theme.theme-dracula
+esbenp.prettier-vscode
+file-icons.file-icons
+ms-python.python
+timonwong.shellcheck
