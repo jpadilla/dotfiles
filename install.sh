@@ -15,12 +15,7 @@ source ~/.bash_profile
 
 # Install latest release of node
 echo "Installing node..."
-nvm install lts
-nvm alias default lts
-
-# Install Node.js global tools
-echo "Updating npm..."
-npm install -g npm
+nvm install lts/*  --latest-npm
 
 echo "Installing yarn..."
 brew install yarn --without-node
