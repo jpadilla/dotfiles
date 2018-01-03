@@ -35,7 +35,7 @@ rbenv global 2.5.0
 
 # VSCode packages
 echo "Installing VSCode Packages..."
-vscode-extensions-update
+vscode-extensions-install
 
 echo
 echo "==> Done!"
