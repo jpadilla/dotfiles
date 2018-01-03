@@ -14,7 +14,7 @@ sudo xcodebuild -license accept
 # Install nvm
 echo "Installing nvm..."
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash
-source ~/.bash_profile
+source ~/.profile
 
 # Install latest release of node
 echo "Installing node..."

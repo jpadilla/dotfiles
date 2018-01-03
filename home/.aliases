@@ -57,3 +57,30 @@ alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
+
+# Functions
+function ip() {
+  IP=$(ipconfig getifaddr en0)
+  IFACE="en0"
+
+  if [[ -z "$IP" ]]; then
+    IP=$(ipconfig getifaddr en4)
+    IFACE="en4"
+  fi
+
+  echo "Local($IFACE): $IP"
+  echo "Remote:     $(curl -s https://ipinfo.io/ip)"
+}
+
+function gi() {
+  curl https://www.gitignore.io/api/$@;
+}
+
+function django-start-project() {
+  django-admin.py startproject --template=https://github.com/jpadilla/django-project-template/archive/master.zip --name=Procfile --extension=py,md,env $1
+}
+
+function docker-cleanup() {
+	docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
+	docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
+}

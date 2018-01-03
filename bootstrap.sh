@@ -16,6 +16,9 @@ cd ~/Projects/Personal
 git clone https://github.com/jpadilla/dotfiles.git
 cd dotfiles
 
+# Defaults
+./osx.sh
+
 # Symlinks
 ./symlinks.sh
 

@@ -20,39 +20,14 @@
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 
 [alias]
+  b  = branch
+  co = checkout
+
   # View the SHA, description, and history graph of the latest 20 commits
   l = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
   # View the current working tree status using the short format
   s = status -s
-
-  # Diff
-  d = diff --patch-with-stat
-
-  # Pull in remote changes for the current repository and all its submodules
-  p = !git pull --rebase
-
-  # Commit all changes
-  ca = !git add . && git add -u && git commit -m
-
-  st = status
-  ci = commit
-  co = checkout
-  go = checkout
-  br = branch
-  ls = branch
-  a  = add
-  b  = branch --sort=committerdate
-  dc = diff --cached
-  v  = show
-  ll = log
-  cp = cherry-pick
-  c  = checkout
-  cc = commit
-  ri = rebase -i HEAD~10
-  sh = !git-sh
-  ro = !git fetch origin && git reset --hard origin/master
-  tree = log --graph --decorate --pretty=oneline --abbrev-commit
 
   # GitHub Pull Request Management
   pr = "!f() { git fetch -fu origin refs/pull/$1/head:pr/$1; } ; f"

@@ -32,4 +32,4 @@ echo "--> Done!"
 unset getFilesInDir
 unset symlinkFilesTo
 
-source ~/.bash_profile
+source ~/.profile
