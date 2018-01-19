@@ -29,6 +29,7 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_AUTO_UPDATE_SECS=3600
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
