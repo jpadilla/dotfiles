@@ -1,39 +1,48 @@
 {
     "docker.showExplorer": false,
-    "editor.fontSize": 22,
     "editor.fontFamily": "SourceCodePro-Light",
-    "editor.rulers": [80, 100],
-    "editor.tabSize": 2,
-    "editor.tabCompletion": true,
+    "editor.fontSize": 22,
     "editor.minimap.enabled": false,
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
+    "editor.rulers": [
+        100,
+        80
+    ],
+    "editor.tabCompletion": true,
+    "editor.tabSize": 2,
+    "eslint.packageManager": "yarn",
+    "extensions.ignoreRecommendations": false,
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
         "**/*.pyc": true,
-        "**/__pycache__": true
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/__pycache__": true,
+        "**/CVS": true
     },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "prettier.arrowParens": "always",
+    "prettier.singleQuote": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "facebook"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/Users/jpadilla/.pyenv/versions/2.7.14/bin/flake8",
+    "python.linting.pylintEnabled": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.shellArgs.osx": [
+        "-l"
+    ],
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "file-icons-colourless",
-    "telemetry.enableTelemetry": false,
-    "terminal.integrated.shellArgs.osx": ["-l"],
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Path": "/Users/jpadilla/.pyenv/versions/2.7.9/bin/flake8",
-    "window.zoomLevel": 0,
     "workbench.startupEditor": "newUntitledFile",
-    "extensions.ignoreRecommendations": false,
     "[python]": {
-        "editor.tabSize": 4,
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4
     },
-    "python.formatting.provider": "yapf",
-    "python.formatting.yapfArgs": ["--style", "facebook"],
-    "prettier.singleQuote": true,
-    "prettier.arrowParens": "always",
-    "git.autofetch": true
 }
