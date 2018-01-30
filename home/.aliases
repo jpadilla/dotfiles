@@ -52,6 +52,9 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias vscode-extensions-save='code --list-extensions > ~/Projects/Personal/dotfiles/vscode/extensions.txt && echo Done!'
 alias vscode-extensions-install='cat ~/Projects/Personal/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
 
+# ImageOptim
+alias imageoptim='open -a ImageOptim "$@"'
+
 # Other
 alias server='python -m SimpleHTTPServer 8888'
 alias redis='redis-server'
