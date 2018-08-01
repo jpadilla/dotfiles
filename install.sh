@@ -25,13 +25,8 @@ brew install yarn --without-node
 
 # Install Python
 echo "Installing Python..."
-pyenv install 3.6.3
-pyenv global 3.6.3
-
-# Install Ruby
-echo "Installing Ruby..."
-rbenv install 2.5.0
-rbenv global 2.5.0
+pyenv install 3.6.6
+pyenv global 3.6.6
 
 # VSCode packages
 echo "Installing VSCode Packages..."

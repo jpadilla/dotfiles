@@ -54,9 +54,6 @@ export NVM_DIR="$HOME/.nvm"
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # Bash Completion
 if hash brew 2>/dev/null && [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
