@@ -50,6 +50,7 @@ cask "visual-studio-code"
 cask "vlc"
 
 mas "1Password 7", id: 1333542190
+mas "Bear", id: 1091189122
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
