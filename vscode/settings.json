@@ -26,11 +26,14 @@
     "prettier.arrowParens": "always",
     "prettier.singleQuote": true,
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/Users/jpadilla/.pyenv/versions/3.6.3/bin/black",
+    "python.formatting.blackPath": "/Users/jpadilla/.local/bin/black",
+    "python.formatting.blackArgs": [
+        "--line-length", "88",
+    ],
     "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "/Users/jpadilla/.pyenv/versions/2.7.14/bin/flake8",
+    "python.linting.flake8Path": "/Users/jpadilla/.local/bin/flake8",
     "python.linting.pylintEnabled": false,
-    "python.sortImports.path": "/Users/jpadilla/.pyenv/versions/3.6.3/bin/isort",
+    "python.sortImports.path": "/Users/jpadilla/.local/bin/isort",
     "telemetry.enableTelemetry": false,
     "terminal.integrated.shellArgs.osx": [
         "-l"
@@ -42,9 +45,5 @@
     "[python]": {
         "editor.tabSize": 4
     },
-    "black.lineLength": 88,
-    "black.fast": false,
-    "black.debug": false,
-    "black.path": "/Users/jpadilla/.pyenv/versions/3.6.3/bin/black",
     "explorer.confirmDragAndDrop": false
 }
