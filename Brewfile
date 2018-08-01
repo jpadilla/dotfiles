@@ -38,13 +38,11 @@ cask "macdown"
 cask "mongodb"
 cask "ngrok"
 cask "paparazzi"
-cask "plex-media-server"
 cask "rabbitmq-app"
 cask "robo-3t"
 cask "screenflow"
 cask "sketch"
 cask "skype"
-cask "sonarr"
 cask "spotify"
 cask "the-unarchiver"
 cask "transmission"
@@ -52,8 +50,7 @@ cask "viscosity"
 cask "visual-studio-code"
 cask "vlc"
 
-mas "1Password", id: 443987910
-mas "Evernote", id: 406056744
+mas "1Password 7", id: 1333542190
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
