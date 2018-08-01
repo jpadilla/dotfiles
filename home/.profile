@@ -24,6 +24,7 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 
 # Local binaries
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Homebrew
 export PATH="/usr/local/bin:$PATH"
