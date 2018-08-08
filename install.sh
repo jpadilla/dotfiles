@@ -30,7 +30,7 @@ pyenv global 3.6.6
 
 # VSCode packages
 echo "Installing VSCode Packages..."
-vscode-extensions-install
+xargs -n 1 code --install-extension < ~/Projects/Personal/dotfiles/vscode/extensions.txt
 
 echo
 echo "==> Done!"
