@@ -48,7 +48,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # VS Code extension management
 alias vscode-extensions-save='code --list-extensions > ~/Projects/Personal/dotfiles/vscode/extensions.txt && echo Done!'
-alias vscode-extensions-install='cat ~/Projects/Personal/dotfiles/vscode/extensions.txt | xargs -n 1 code --install-extension'
+alias vscode-extensions-install='xargs -n 1 code --install-extension < ~/Projects/Personal/dotfiles/vscode/extensions.txt'
 
 # ImageOptim
 alias imageoptim='open -a ImageOptim "$@"'
@@ -85,4 +85,12 @@ function django-start-project() {
 function docker-cleanup() {
 	docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
 	docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
+}
+
+function archive() {
+  tar cvJf "$1.tar.xz" "$1"
+}
+
+function unarchive() {
+  tar xvJf "$1"
 }
