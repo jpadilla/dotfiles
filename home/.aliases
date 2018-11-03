@@ -59,6 +59,7 @@ alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
 alias travis='docker run -it --rm -v `pwd`:/data -v $HOME/.travis:/root/.travis jpadilla/travis-cli $@'
+alias sshf='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
 # Functions
 function ip() {
