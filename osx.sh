@@ -2,8 +2,15 @@
 echo "==> Running osx.sh"
 
 # Keyboard
-defaults write -g InitialKeyRepeat -int 15
-defaults write -g KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Mouse
+defaults write NSGlobalDomain com.apple.mouse.scaling 1.5
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode -string TwoButton
+
+# Trackpad
+defaults write NSGlobalDomain com.apple.trackpad.scaling 1.5
 
 # Disable automatic capitalization
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
@@ -25,3 +32,6 @@ defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false
 
 # Touch Bar shows expanded control strip
 defaults write com.apple.touchbar.agent PresentationModeGlobal fullControlStrip
+
+# Disable floating screenshot thumbnail
+defaults write com.apple.screencapture show-thumbnail -bool FALSE
