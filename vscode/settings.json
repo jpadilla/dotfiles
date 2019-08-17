@@ -10,6 +10,7 @@
     "editor.tabCompletion": true,
     "editor.tabSize": 2,
     "eslint.packageManager": "yarn",
+    "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": false,
     "files.exclude": {
         "**/*.pyc": true,
@@ -25,11 +26,12 @@
     "git.autofetch": true,
     "prettier.arrowParens": "always",
     "prettier.singleQuote": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/Users/jpadilla/.local/bin/black",
     "python.formatting.blackArgs": [
-        "--line-length", "88",
+        "--line-length",
+        "88"
     ],
+    "python.formatting.blackPath": "/Users/jpadilla/.local/bin/black",
+    "python.formatting.provider": "black",
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "/Users/jpadilla/.local/bin/flake8",
     "python.linting.pylintEnabled": false,
@@ -42,8 +44,10 @@
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "file-icons-colourless",
     "workbench.startupEditor": "newUntitledFile",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[python]": {
         "editor.tabSize": 4
-    },
-    "explorer.confirmDragAndDrop": false
+    }
 }

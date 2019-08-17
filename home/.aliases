@@ -10,8 +10,7 @@ alias sudo='sudo '
 alias dl="cd ~/Downloads"
 alias d="cd ~/Desktop"
 alias p="cd ~/Projects"
-alias ap="cd ~/Projects/Alias"
-alias dotfiles="cd ~/Projects/Personal/dotfiles"
+alias dotfiles="cd ~/Projects/personal/dotfiles"
 alias o='open .'
 alias ls='ls -lah'
 
@@ -47,8 +46,8 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # VS Code extension management
-alias vscode-extensions-save='code --list-extensions > ~/Projects/Personal/dotfiles/vscode/extensions.txt && echo Done!'
-alias vscode-extensions-install='xargs -n 1 code --install-extension < ~/Projects/Personal/dotfiles/vscode/extensions.txt'
+alias vscode-extensions-save='code --list-extensions > ~/Projects/personal/dotfiles/vscode/extensions.txt && echo Done!'
+alias vscode-extensions-install='xargs -n 1 code --install-extension < ~/Projects/personal/dotfiles/vscode/extensions.txt'
 
 # ImageOptim
 alias imageoptim='open -a ImageOptim "$@"'

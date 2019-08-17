@@ -514,7 +514,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Projects/Personal/dotfiles/iterm</string>
+	<string>~/Projects/personal/dotfiles/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -2193,7 +2193,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/jpadilla/Projects/Personal/dotfiles/iterm</string>
+	<string>/Users/jpadilla/Projects/personal/dotfiles/iterm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
