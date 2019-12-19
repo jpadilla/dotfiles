@@ -1,4 +1,4 @@
-PeterJausovec.vscode-docker
+ms-azuretools.vscode-docker
 Tyriar.sort-lines
 dracula-theme.theme-dracula
 esbenp.prettier-vscode
