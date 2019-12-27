@@ -1,28 +1,17 @@
 #!/bin/bash
-echo "==> Running install.sh"
 
-echo "Installing Homebrew..."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+set -euf -o pipefail
 
-echo "Installing dependencies from Brewfile..."
-brew tap Homebrew/bundle
-brew bundle
+DOTFILES=$(pwd -P)
 
-# Accept Xcode license
-sudo xcodebuild -license accept
+# Install homebrew
+$DOTFILES/homebrew/install.sh
 
-# Install nvm
-echo "Installing nvm..."
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash
-source ~/.profile
+# find the installers and run them iteratively
+installers=$(find . -type f -name install.sh -not -path "./install.sh" -not -path "./homebrew/install.sh")
+echo "$installers" | while read installer; do
+  bash -c "${installer}";
+  echo
+done
 
-# Install latest release of node
-echo "Installing node..."
-nvm install lts/*  --latest-npm
-
-# VSCode packages
-echo "Installing VSCode Packages..."
-xargs -n 1 code --install-extension < ~/Projects/personal/dotfiles/vscode/extensions.txt
-
-echo
 echo "==> Done!"

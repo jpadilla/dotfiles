@@ -7,7 +7,7 @@
         100,
         80
     ],
-    "editor.tabCompletion": true,
+    "editor.tabCompletion": "on",
     "editor.tabSize": 2,
     "eslint.packageManager": "yarn",
     "explorer.confirmDragAndDrop": false,
@@ -37,9 +37,7 @@
     "python.linting.pylintEnabled": false,
     "python.sortImports.path": "/Users/jpadilla/.local/bin/isort",
     "telemetry.enableTelemetry": false,
-    "terminal.integrated.shellArgs.osx": [
-        "-l"
-    ],
+    "terminal.integrated.shell.osx": "zsh",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "file-icons-colourless",

@@ -29,3 +29,5 @@ Temporary Items
 home/.bin/circleci
 home/.bin/helm
 home/.bin/sops
+
+Brewfile.lock.json

@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "==> Running osx.sh"
 
 # Keyboard
 defaults write NSGlobalDomain InitialKeyRepeat -int 15

@@ -1,35 +1,32 @@
 #!/bin/bash
 
-# Gets a list of files
-function getFilesInDir() {
-  find "$1" ! -path ./.DS_Store -name '*.*'
-}
-
-# $1 directory to search for files
-# $2 destination of symlink
 function symlinkFilesTo() {
-  for F in $(getFilesInDir "$1"); do
-    # Make symlink
-    cleanPath=$(echo "$F" | sed 's,^[^/]*/,,')
-    echo "- ${2}/${cleanPath} -> ${1}/${cleanPath}"
-    ln -sfn "${PWD}/${1}/${cleanPath}" "${2}/${cleanPath}"
+  echo "$1" | while read -r sourcePath; do
+    cleanPath=$(dirname $(echo "$sourcePath" | cut -d/ -f6-))
+    filePath=$(basename "${sourcePath%.*}")
+    if [ "$cleanPath" == "." ]; then
+      dst="$2/$filePath"
+    else
+      dst="$2/$cleanPath/$filePath"
+    fi
+    echo "${sourcePath} => ${dst}"
+    ln -sfn "${sourcePath}" "${dst}"
   done
 }
 
 # Home files
 echo "--> home symlinks.."
-symlinkFilesTo home "${HOME}"
+homeFiles=$(find -H $(pwd) -maxdepth 2 -name '*.symlink' -not -path '*vscode*')
+symlinkFilesTo "$homeFiles" "$HOME"
 
 # vscode
 echo "--> VSCode symlinks..."
-mkdir -p "${HOME}/Library/Application Support/Code/User/snippets"
-symlinkFilesTo vscode "${HOME}/Library/Application Support/Code/User"
+mkdir -p "$HOME/Library/Application Support/Code/User/snippets"
+vscodeFiles=$(find -H "$(pwd)/vscode" -maxdepth 2 -name '*.symlink')
+symlinkFilesTo "$vscodeFiles" "$HOME/Library/Application Support/Code/User"
 
 # Done
 echo "--> Done!"
-
-# Unset
-unset getFilesInDir
 unset symlinkFilesTo
 
 source ~/.profile
