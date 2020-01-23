@@ -72,6 +72,9 @@ source "$HOME/.prompt"
 # Secrets
 [ -s "$HOME/.secret" ] && source "$HOME/.secret"
 
+# Local aliases
+[ -s "$HOME/.aliases.local" ] && source "$HOME/.aliases.local"
+
 # Google Cloud SDK
 if [ -d "/usr/local/Caskroom/google-cloud-sdk/" ]; then
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
