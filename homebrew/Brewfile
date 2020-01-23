@@ -1,12 +1,14 @@
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 
 brew "bash-completion"
 brew "diff-so-fancy"
 brew "git"
+brew "gnu-sed"
 brew "heroku"
 brew "jq"
 brew "mas"
@@ -15,6 +17,7 @@ brew "tree"
 brew "wget"
 brew "wifi-password"
 
+cask "1password-cli"
 cask "arq"
 cask "docker"
 cask "font-inconsolata"
@@ -26,6 +29,7 @@ cask "spotify"
 cask "the-unarchiver"
 cask "viscosity"
 cask "visual-studio-code"
+cask "zoomus"
 
 mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
