@@ -1,3 +1,5 @@
+alias reload!='. ~/.zshrc'
+
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -94,3 +96,6 @@ function archive() {
 function unarchive() {
   tar xvJf "$1"
 }
+
+# Local aliases
+[ -s "$HOME/.aliases.local" ] && source "$HOME/.aliases.local"
