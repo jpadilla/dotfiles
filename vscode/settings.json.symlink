@@ -47,5 +47,8 @@
     },
     "[python]": {
         "editor.tabSize": 4
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
