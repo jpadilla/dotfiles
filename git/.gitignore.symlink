@@ -35,3 +35,9 @@ Temporary Items
 
 # pyenv
 .python-version
+
+# vscode
+.vscode
+
+# Python
+.venv
