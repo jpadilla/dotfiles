@@ -2,8 +2,9 @@
 
 set -euf -o pipefail
 
-echo "=> Installing nvm and node..."
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | \
-  NODE_VERSION='lts/*' PROFILE='/dev/null' bash
+echo "=> Installing volta and node..."
+curl -s https://get.volta.sh | bash -s -- --skip-setup
 
-. $DOTFILES/node/setup-nvm.zsh
+. $DOTFILES/node/setup-volta.zsh
+
+volta install node
