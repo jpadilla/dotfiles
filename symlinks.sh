@@ -28,5 +28,3 @@ symlinkFilesTo "$vscodeFiles" "$HOME/Library/Application Support/Code/User"
 # Done
 echo "--> Done!"
 unset symlinkFilesTo
-
-source ~/.profile
