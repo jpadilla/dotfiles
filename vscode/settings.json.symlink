@@ -39,7 +39,6 @@
     "telemetry.enableTelemetry": false,
     "terminal.integrated.shell.osx": "zsh",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "file-icons-colourless",
     "workbench.startupEditor": "newUntitledFile",
     "[javascript]": {
@@ -50,5 +49,9 @@
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "workbench.colorTheme": "Dracula",
+    "go.useLanguageServer": true,
+    "go.formatTool": "goimports",
+    "go.lintTool": "golangci-lint"
 }
