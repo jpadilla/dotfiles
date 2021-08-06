@@ -4,7 +4,7 @@ set -euf -o pipefail
 
 if test ! $(which brew); then
   echo "=> Installing Homebrew..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo "=> Updating Homebrew..."
   brew update
