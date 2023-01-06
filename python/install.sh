@@ -2,7 +2,7 @@
 
 set -euf -o pipefail
 
-PYTHON_VERSION=3.8.0
+PYTHON_VERSION=3.11.1
 
 if [[ ! -d "$HOME/.pyenv/versions/$PYTHON_VERSION" ]]; then
   echo "=> Installing Python $PYTHON_VERSION..."

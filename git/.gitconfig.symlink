@@ -3,6 +3,9 @@
   email = jpadilla@users.noreply.github.com
   signingkey = B55434E2
 
+[init]
+	defaultBranch = main
+
 [core]
   excludesfile = ~/.gitignore
   quotepath = false
@@ -36,5 +39,14 @@
 
 [credential]
 	helper = osxkeychain
-[init]
-	defaultBranch = main
+
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
