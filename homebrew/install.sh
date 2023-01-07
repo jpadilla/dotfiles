@@ -13,4 +13,4 @@ fi
 
 echo "=> Installing dependencies from Brewfile..."
 brew tap Homebrew/bundle
-brew bundle --file=$DOTFILES/homebrew/Brewfile
+brew bundle --file="$HOME/.dotfiles/homebrew/Brewfile"
