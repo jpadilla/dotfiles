@@ -8,6 +8,7 @@ brew "bash-completion"
 brew "diff-so-fancy"
 brew "git"
 brew "gnu-sed"
+brew "go"
 brew "heroku"
 brew "jq"
 brew "mas"
@@ -16,9 +17,10 @@ brew "tree"
 brew "wget"
 brew "wifi-password"
 
-cask "1password"
 cask "1password-cli"
+cask "1password"
 cask "arq"
+cask "cleanshot"
 cask "font-inconsolata"
 cask "font-source-code-pro"
 cask "insomnia"
@@ -33,4 +35,5 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
+mas "Things 3", id: 904280696
 mas "Xcode", id: 497799835
