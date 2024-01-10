@@ -1,1 +1,0 @@
-# fpath+=("$DOTFILES/zsh/pure")

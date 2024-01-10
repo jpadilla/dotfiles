@@ -1,19 +1,13 @@
-tap "heroku/brew"
-tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 
-brew "bash-completion"
 brew "diff-so-fancy"
 brew "git"
 brew "gnu-sed"
 brew "go"
-brew "heroku"
 brew "jq"
 brew "mas"
+brew "nvm"
 brew "pyenv"
-brew "tree"
 brew "wget"
 brew "wifi-password"
 
@@ -23,17 +17,12 @@ cask "arq"
 cask "cleanshot"
 cask "font-inconsolata"
 cask "font-source-code-pro"
-cask "insomnia"
+cask "git-credential-manager"
 cask "iterm2"
-cask "robo-3t"
+cask "orbstack"
 cask "spotify"
 cask "the-unarchiver"
 cask "visual-studio-code"
 
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Slack", id: 803453959
-mas "Spark", id: 1176895641
-mas "Things 3", id: 904280696
 mas "Xcode", id: 497799835

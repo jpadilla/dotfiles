@@ -51,15 +51,10 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias vscode-extensions-save='code --list-extensions > ~/Projects/personal/dotfiles/vscode/extensions.txt && echo Done!'
 alias vscode-extensions-install='xargs -n 1 code --install-extension < ~/Projects/personal/dotfiles/vscode/extensions.txt'
 
-# ImageOptim
-alias imageoptim='open -a ImageOptim "$@"'
-
 # Other
 alias server='python -m SimpleHTTPServer 8888'
-alias redis='redis-server'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
-alias travis='docker run -it --rm -v `pwd`:/data -v $HOME/.travis:/root/.travis jpadilla/travis-cli $@'
 alias sshf='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
 # Functions
@@ -78,15 +73,6 @@ function ip() {
 
 function gi() {
   curl https://www.gitignore.io/api/$@;
-}
-
-function django-start-project() {
-  django-admin.py startproject --template=https://github.com/jpadilla/django-project-template/archive/master.zip --name=Procfile --extension=py,md,env $1
-}
-
-function docker-cleanup() {
-	docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
-	docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
 }
 
 function archive() {

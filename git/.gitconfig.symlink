@@ -32,21 +32,7 @@
   # View the current working tree status using the short format
   s = status -s
 
-  # GitHub Pull Request Management
-  pr = "!f() { git fetch -fu origin refs/pull/$1/head:pr/$1; } ; f"
-
   delete-merged-branches = !git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin
 
 [credential]
-	helper = osxkeychain
-
-[credential "https://github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
-
-[credential "https://gist.github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
-
-[url "git@github.com:"]
-  insteadOf = https://github.com/
+  helper = /usr/local/bin/git-credential-manager-core
