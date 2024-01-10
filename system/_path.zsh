@@ -1,2 +1,5 @@
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
