@@ -25,12 +25,3 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-# Disable Touch Bar typing suggestions
-defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false
-
-# Touch Bar shows expanded control strip
-defaults write com.apple.touchbar.agent PresentationModeGlobal fullControlStrip
-
-# Disable floating screenshot thumbnail
-defaults write com.apple.screencapture show-thumbnail -bool FALSE
