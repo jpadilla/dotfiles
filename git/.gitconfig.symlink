@@ -35,4 +35,4 @@
   delete-merged-branches = !git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin
 
 [credential]
-  helper = /usr/local/bin/git-credential-manager-core
+	helper = /usr/local/share/gcm-core/git-credential-manager
