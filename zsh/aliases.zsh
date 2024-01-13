@@ -14,7 +14,9 @@ alias d="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias dotfiles="cd ~/.dotfiles"
 alias o='open .'
-alias ls='ls -lah'
+alias ls='eza --all --long --header --git --time-style=long-iso'
+alias tree="eza --tree --level=3 --git-ignore --ignore-glob='.git'"
+alias cat="bat --theme=$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub) $1"
 
 # Network
 alias dig="dig @8.8.8.8 ANY +noall +answer $1"

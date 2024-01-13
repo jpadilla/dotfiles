@@ -32,18 +32,14 @@ done
 
 unset config_files
 
-# Better history
-# Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
-
 # [Ctrl-RightArrow] - move forward one word
 bindkey "^[[1;5C" forward-word
 
 # [Ctrl-LeftArrow] - move backward one word
 bindkey "^[[1;5D" backward-word
 
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
