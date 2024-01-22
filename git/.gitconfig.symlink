@@ -1,7 +1,7 @@
 [user]
   name = José Padilla
-  email = jpadilla@users.noreply.github.com
-  signingkey = B55434E2
+  email = jose.padilla@okta.com
+	signingkey = 5EAFDA0563C00FCE
 
 [init]
 	defaultBranch = main
@@ -48,5 +48,15 @@
 
   delete-merged-branches = !git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin
 
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential]
+	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

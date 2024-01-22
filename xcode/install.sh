@@ -3,4 +3,4 @@
 set -euf -o pipefail
 
 # Accept Xcode license
-sudo xcodebuild -license accept
+# sudo xcodebuild -license accept

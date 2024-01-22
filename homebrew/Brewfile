@@ -19,11 +19,9 @@ brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 
 cask "1password-cli"
-cask "1password"
 cask "arq"
 cask "cleanshot"
 cask "font-inconsolata"
-cask "font-inconsolata-nerd-font"
 cask "font-source-code-pro"
 cask "git-credential-manager"
 cask "iterm2"
@@ -31,6 +29,3 @@ cask "orbstack"
 cask "spotify"
 cask "the-unarchiver"
 cask "visual-studio-code"
-
-mas "Slack", id: 803453959
-mas "Xcode", id: 497799835
