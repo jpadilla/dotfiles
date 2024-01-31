@@ -49,10 +49,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-# VS Code extension management
-alias vscode-extensions-save='code --list-extensions > ~/Projects/personal/dotfiles/vscode/extensions.txt && echo Done!'
-alias vscode-extensions-install='xargs -n 1 code --install-extension < ~/Projects/personal/dotfiles/vscode/extensions.txt'
-
 # Other
 alias server='python -m SimpleHTTPServer 8888'
 alias npmls='npm list --depth=0 "$@" 2>/dev/null'
